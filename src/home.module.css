@@ -1,0 +1,12 @@
+.home {
+  background-color: #44281d;
+  height: 100vh;
+  color: #ffffffaa;
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    background-color: red;
+    color: blue;
+  }
+}
