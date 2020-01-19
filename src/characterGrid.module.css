@@ -28,3 +28,18 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+.empty {
+  composes: padding from "./common/base.css";
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.empty img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+}

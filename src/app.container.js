@@ -5,18 +5,28 @@ import SplashScreen from "./splashScreen.component";
 import Home from "./home.component";
 
 class App extends React.Component {
+  state = {
+    showSplashScreen: true
+  };
+
   componentDidMount() {
     this.props.loadAPIData();
+    setTimeout(() => {
+      this.setState({
+        showSplashScreen: false
+      });
+    }, 4000);
   }
 
   render() {
-    const { showSplashScreen, apiData } = this.props;
+    const { showSplashScreen } = this.state;
+    const { apiData, loadAPIData } = this.props;
     return (
       <div className="App">
         {showSplashScreen ? (
           <SplashScreen />
         ) : (
-          apiData && <Home data={apiData} />
+          apiData && <Home data={apiData} loadAPIData={loadAPIData} />
         )}
       </div>
     );

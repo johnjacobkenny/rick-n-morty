@@ -1,10 +1,22 @@
 import React from "react";
 import styles from "./characterGrid.module.css";
+import emptyState from "./emptyState.png";
+import Spinner from "./common/spinner.component";
 
 class CharacterGrid extends React.Component {
   render() {
     const { data } = this.props;
-    if (!data) return null;
+    if (!data) return <Spinner />;
+    if (data.error)
+      return (
+        <div className={styles.empty}>
+          <img src={emptyState} alt="empty state" />I hate to break it to ya
+          Morty, what you're looking for isn't in this multiverse! Try something
+          else.
+        </div>
+      );
+    // if (data.error) return <div className={styles.empty}>Whoops, couldn't find that one!</div>;
+
     const characterGridItems = data.results.map(item => (
       <CharacterGridItem character={item} />
     ));

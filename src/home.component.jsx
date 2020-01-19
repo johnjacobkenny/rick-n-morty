@@ -5,14 +5,14 @@ import styles from "./home.module.css";
 
 class Home extends React.Component {
   render() {
-    const { data } = this.props;
+    const { data, loadAPIData } = this.props;
     return (
       <div className={styles.home}>
         <div className={styles.header}>Rick and Morty Pitstop</div>
         <div className={styles.tagline}>
           Your one stop shop to know all about Rick and Morty characters!
         </div>
-        {/* <Filters /> */}
+        <Filters onSubmit={loadAPIData} />
         <CharacterGrid data={data} />
       </div>
     );
