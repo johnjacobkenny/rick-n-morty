@@ -4,6 +4,7 @@ import styles from "./characterGrid.module.css";
 class CharacterGrid extends React.Component {
   render() {
     const { data } = this.props;
+    if (!data) return null;
     const characterGridItems = data.results.map(item => (
       <CharacterGridItem character={item} />
     ));
