@@ -5,7 +5,7 @@ import SplashScreen from "./splashScreen.component";
 import Home from "./home.component";
 
 class App extends React.Component {
-  componentWillMount() {
+  componentDidMount() {
     this.props.loadAPIData();
   }
 
