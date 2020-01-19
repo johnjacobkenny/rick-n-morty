@@ -6,7 +6,7 @@ import Spinner from "./common/spinner.component";
 class CharacterGrid extends React.Component {
   render() {
     const { data } = this.props;
-    if (!data) return <Spinner />;
+    if (!data) return;
     if (data.error)
       return (
         <div className={styles.empty}>
