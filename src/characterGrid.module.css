@@ -15,6 +15,11 @@
   .characterGrid .gridItem {
     flex: 1 0 45%;
   }
+
+  .empty {
+    align-items: center;
+    text-align: justify;
+  }
 }
 
 .characterGrid .gridItem img {
