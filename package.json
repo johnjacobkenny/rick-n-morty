@@ -45,6 +45,7 @@
     "postcss-normalize": "8.0.1",
     "postcss-preset-env": "6.7.0",
     "postcss-safe-parser": "4.0.1",
+    "precompress": "^5.1.2",
     "react": "^16.12.0",
     "react-app-polyfill": "^1.0.5",
     "react-dev-utils": "^10.0.0",
@@ -67,7 +68,9 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
+    "prebuild": "rm -rf docs",
     "build": "node scripts/build.js",
+    "postbuild": "precompress build && mv build docs",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
