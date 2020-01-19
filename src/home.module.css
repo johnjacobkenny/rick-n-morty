@@ -1,11 +1,12 @@
 .home {
-  background-color: #44281d;
+  background-color: #000000;
+  /* background-color: #44281d; */
   color: #ffffffaa;
 }
 
 .header {
   composes: padding from "./common/base.css";
-  background-color: #00000055;
+  background-color: #ffffff33;
   display: flex;
   font-size: 24px;
 }

@@ -6,7 +6,7 @@ function* loadAPIData() {
   const response = yield call(getCharacter);
   const isResponseSuccess = true;
 
-  // yield delay(1000);
+  yield delay(4000);
   if (isResponseSuccess) yield put(loadAPIDataSuccess(response));
   else yield put(loadAPIDataFail(response));
 }
