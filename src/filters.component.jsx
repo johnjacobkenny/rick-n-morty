@@ -27,6 +27,7 @@ class Filters extends React.Component {
     const { name, status, species, type, gender } = this.state;
     return (
       <div className={styles.filters}>
+        FILTER:
         <div>
           Name:{" "}
           <input
