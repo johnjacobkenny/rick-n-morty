@@ -1,0 +1,3 @@
+.filters {
+    composes: padding from "./common/base.css";
+}

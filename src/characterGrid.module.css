@@ -1,0 +1,30 @@
+.characterGrid {
+  composes: padding from "./common/base.css";
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.characterGrid .gridItem {
+  flex: 1 0 21%;
+  padding: 8px;
+  border: 1px solid;
+}
+
+@media screen and (max-width: 768px) {
+  .characterGrid .gridItem {
+    flex: 1 0 45%;
+  }
+}
+
+.characterGrid .gridItem img {
+  width: 100%;
+  height: auto;
+}
+
+.characterGrid .gridItem .name {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

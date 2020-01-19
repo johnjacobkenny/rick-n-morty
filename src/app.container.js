@@ -1,17 +1,32 @@
 import React from "react";
+import { connect } from "react-redux";
+import { loadAPIData } from "./store/actions";
 import SplashScreen from "./splashScreen.component";
 import Home from "./home.component";
 
 class App extends React.Component {
-  state = {
-    loading: false // TODO: take this from the redux store?
-  };
+  componentWillMount() {
+    this.props.loadAPIData();
+  }
 
   render() {
-    const { loading } = this.state;
-
-    return <div className="App">{loading ? <SplashScreen /> : <Home />}</div>;
+    const { showSplashScreen, apiData } = this.props;
+    return (
+      <div className="App">
+        {showSplashScreen ? (
+          <SplashScreen />
+        ) : (
+          apiData && <Home data={apiData} />
+        )}
+      </div>
+    );
   }
 }
 
-export default App;
+const mapStateToProps = state => {
+  return state;
+};
+
+const mapDispatchToProps = { loadAPIData };
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
