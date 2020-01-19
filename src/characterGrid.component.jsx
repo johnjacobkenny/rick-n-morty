@@ -11,8 +11,7 @@ class CharacterGrid extends React.Component {
       return (
         <div className={styles.empty}>
           <img src={emptyState} alt="empty state" />I hate to break it to ya
-          Morty, what you're looking for isn't in this multiverse! Try something
-          else.
+          Morty, what you're looking for doesn't exist in this reality!
         </div>
       );
     // if (data.error) return <div className={styles.empty}>Whoops, couldn't find that one!</div>;
