@@ -15,7 +15,7 @@ const CharacterGridItem = props => {
   const { character } = props;
   return (
     <div className={styles.gridItem}>
-      <img src={character.image} />
+      <img src={character.image} alt={character.name} />
       <div className={styles.name}>{character.name}</div>
       <div>Status: {character.status}</div>
       <div>Species: {character.species}</div>
