@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/rick-n-morty/static/css/main.96cb6289.chunk.css",
+    "main.js": "/rick-n-morty/static/js/main.961eeef7.chunk.js",
+    "main.js.map": "/rick-n-morty/static/js/main.961eeef7.chunk.js.map",
+    "runtime-main.js": "/rick-n-morty/static/js/runtime-main.4d53ad1e.js",
+    "runtime-main.js.map": "/rick-n-morty/static/js/runtime-main.4d53ad1e.js.map",
+    "static/js/2.ecb951ca.chunk.js": "/rick-n-morty/static/js/2.ecb951ca.chunk.js",
+    "static/js/2.ecb951ca.chunk.js.map": "/rick-n-morty/static/js/2.ecb951ca.chunk.js.map",
+    "index.html": "/rick-n-morty/index.html",
+    "precache-manifest.40fd7e83c8994d6234d02e0d02efc9db.js": "/rick-n-morty/precache-manifest.40fd7e83c8994d6234d02e0d02efc9db.js",
+    "service-worker.js": "/rick-n-morty/service-worker.js",
+    "static/css/main.96cb6289.chunk.css.map": "/rick-n-morty/static/css/main.96cb6289.chunk.css.map",
+    "static/js/2.ecb951ca.chunk.js.LICENSE": "/rick-n-morty/static/js/2.ecb951ca.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4d53ad1e.js",
+    "static/js/2.ecb951ca.chunk.js",
+    "static/css/main.96cb6289.chunk.css",
+    "static/js/main.961eeef7.chunk.js"
+  ]
+}
