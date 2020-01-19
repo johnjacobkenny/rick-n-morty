@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e3b6694e1344dbc6b23ead6179050202",
+    "revision": "bb28fcc63505e2ba56073f9f73c93fb0",
     "url": "/rick-n-morty/index.html"
   },
   {
